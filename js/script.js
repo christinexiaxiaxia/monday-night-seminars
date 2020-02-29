@@ -238,62 +238,8 @@ $(".footer").hover(function(){
 
 
 
-// CHECK BROWSER https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+// CHECK BROWSER https://www.geeksforgeeks.org/how-to-detect-the-user-browser-safari-chrome-ie-firefox-and-opera-using-javascript/
 
-// Opera 8.0+
-var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
-
-// Firefox 1.0+
-var isFirefox = typeof InstallTrigger !== 'undefined';
-
-// Safari 3.0+ "[object HTMLElementConstructor]" 
-var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
-
-// Internet Explorer 6-11
-var isIE = /*@cc_on!@*/false || !!document.documentMode;
-
-// Edge 20+
-var isEdge = !isIE && !!window.StyleMedia;
-
-// Chrome 1 - 79
-var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
-
-// Edge (based on chromium) detection
-var isEdgeChromium = isChrome && (navigator.userAgent.indexOf("Edg") != -1);
-
-// Blink engine detection
-var isBlink = (isChrome || isOpera) && !!window.CSS;
-
-
-// if (isOpera = true || isFirefox = true || isSafari = true || isIE = true || isEdge = true) {
-// 	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
-// }
-
-// if (isOpera = true) {
-// 	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
-// }
-
-// if (isFirefox = true) {
-// 	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
-// }
-
-// if (isSafari = true) {
-// 	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
-// }
-
-// if (isIE = true) {
-// 	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
-// }
-
-// if (isEdge = true) {
-// 	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
-// }
-
-
-
-
-
- 
 function checkBrowser() { 
           
 	// Get the user-agent string 
@@ -328,25 +274,13 @@ function checkBrowser() {
 	// Discard Chrome since it also matches Opera      
 	if ((chromeAgent) && (operaAgent))  
 		chromeAgent = false; 
-          
-	// document.querySelector(".output-safari").textContent 
-	// 	= safariAgent; 
-	// document.querySelector(".output-chrome").textContent 
-	// 	= chromeAgent; 
-	// document.querySelector(".output-ie").textContent 
-	// 	= IExplorerAgent; 
-	// document.querySelector(".output-opera").textContent 
-	// 	= operaAgent; 
-	// document.querySelector(".output-firefox").textContent 
-	// 	= firefoxAgent; 
 
-	if (firefoxAgent == true) {
+	// if (safariAgent == true || IExplorerAgent == true || operaAgent == true || firefoxAgent == true) {
+	if (chromeAgent == false) {
 		alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
 	}
 
 } 
 
 checkBrowser();
-
-
 
