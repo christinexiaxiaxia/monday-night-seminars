@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Monday Night Seminars — Mcluhan Centre for Culture and Technology</title>
+        
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/rave.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://omnipotent.net/jquery.sparkline/2.1.2/jquery.sparkline.js"></script>
+        
+
+    </head>
+    <body>
+	    <div class="organization-title">Mcluhan Centre for Culture and Technology</br><span class="presents">presents:</span></div>
+
+			<div class="series-title monday">
+			    	<div class="letter letter-m">    		
+						<div class="base-circ1" id="m-base-left"></div>
+						<div class="counter-rect-big" id="m-rect-counter-big-right"></div>	
+						<div class="base-circ1" id="m-base-right"></div>
+						<div class="terminal-small" id="m-ear"></div>
+						<div class="terminal-small" id="m-ear-extra"></div>
+						<div class="terminal-big" id="m-terminal-bottom"></div>	
+						<div class="counter-small" id="m-counter-ear"></div>
+						<div class="counter-big" id="m-counter-big-bottom"></div>
+						<div class="counter-med" id="m-counter-med-left"></div> 		
+						<div class="counter-med" id="m-counter-med-right"></div>
+			    	</div>
+			    	<div class="letter letter-o">    	
+						<div class="base-circ1" id="o-base"></div>
+						<div class="counter-med" id="o-counter-med"></div>  
+			    	</div>
+					<div class="letter letter-n">    		
+						<div class="base-circ1" id="n-base"></div>
+						<div class="terminal-small" id="n-ear"></div>
+						<div class="terminal-small" id="n-ear-extra"></div>
+						<div class="terminal-big" id="n-terminal-bottom"></div>	
+						<div class="counter-small" id="n-counter-ear"></div>
+						<div class="counter-big" id="n-counter-big-bottom"></div>
+						<div class="counter-med" id="n-counter-med"></div> 
+			    	</div>
+					<div class="letter letter-d">    
+						<div class="base-circ1" id="d-base"></div>
+						<div class="crossbar" id="d-corner"></div> 
+						<div class="terminal-small" id="d-ear"></div>
+						<div class="terminal-small" id="d-ear-extra"></div>
+						<div class="counter-med" id="d-counter-med"></div> 	
+						<div class="counter-small" id="d-counter-ear"></div>
+			    	</div>
+			    	<div class="letter letter-a"> 	
+						<div class="terminal-big" id="a-terminal-big"></div>
+						<div class="terminal-small" id="a-ear"></div>
+						<div class="terminal-small" id="a-ear-extra"></div>
+						<div class="counter-big" id="a-counter-big"></div>
+						<div class="counter-rect-big" id="a-rect-counter-big"></div>
+						<div class="counter-small" id="a-counter-ear"></div>
+						<div class="terminal-small" id="a-terminal-small"></div>
+						<div class="crossbar" id="a-leg"></div>
+						<div class="base-circ1" id="a-base"></div>
+						<div class="counter-med" id="a-counter-med"></div>
+						<div class="crossbar" id="a-crossbar"></div>
+			    	</div>
+					<div class="letter letter-y">
+						<div class="base-circ3" id="y-base-bottom"></div>
+						<div class="counter-big" id="y-counter-big-bottom"></div>
+						<div class="base-circ2" id="y-base-top"></div>
+						<div class="counter-rect-big" id="y-rect-counter-big"></div>
+						<div class="terminal-big" id="y-terminal-big"></div>
+						<div class="counter-rect-big" id="y-rect-counter-big-left"></div>
+						<div class="terminal-small" id="y-terminal-small"></div>
+						<div class="counter-big" id="y-counter-big-right"></div>
+						<div class="counter-big" id="y-counter-big-left"></div>
+						<div class="counter-med" id="y-counter-med"></div>
+					</div>
+			</div>
+
+			<div class="series-title night">
+					<div class="letter letter-n">    		
+						<div class="base-circ1" id="n-base"></div>
+						<div class="terminal-small" id="n-ear"></div>
+						<div class="terminal-small" id="n-ear-extra"></div>
+						<div class="terminal-big" id="n-terminal-bottom"></div>	
+						<div class="counter-small" id="n-counter-ear"></div>
+						<div class="counter-big" id="n-counter-big-bottom"></div>
+						<div class="counter-med" id="n-counter-med"></div> 
+			    	</div>
+			    	<div class="letter letter-i">    		
+						<div class="base-circ1" id="i-base"></div>
+						<div class="counter-rect-med" id="i-rect-counter-med"></div>
+						<div class="terminal-big" id="i-terminal-bottom"></div>
+						<div class="counter-rect-med" id="i-rect-counter-med-left"></div>
+						<div class="counter-med" id="i-counter-med"></div> 
+						<div class="counter-big" id="i-counter-big-bottom"></div>
+			    	</div>
+			    	<div class="letter letter-g">   
+						<div class="base-circ1" id="g-base"></div>
+						<div class="counter-rect-med" id="g-rect-counter-med"></div>
+						<div class="terminal-big" id="g-terminal-big"></div>
+						<div class="terminal-small" id="g-terminal-small"></div>
+						<div class="counter-big" id="g-counter-big"></div>
+						<div class="counter-rect-big" id="g-rect-counter-big"></div>
+						<div class="counter-med" id="g-counter-med"></div>   
+						<div class="crossbar" id="g-crossbar"></div>   		
+			    	</div>
+					<div class="letter letter-h">   
+						<div class="base-circ1" id="h-base"></div>
+						<div class="counter-rect-big" id="h-rect-counter-big"></div>
+						<div class="terminal-big" id="h-terminal-big"></div>
+						<div class="terminal-small" id="h-terminal-small-top"></div>
+						<div class="terminal-big" id="h-terminal-bottom"></div>	
+						<div class="counter-big" id="h-counter-big-top"></div>
+						<div class="counter-big" id="h-counter-big-right"></div>
+						<div class="counter-big" id="h-counter-big-bottom"></div>
+						<div class="counter-med" id="h-counter-med"></div> 		
+						<div class="crossbar" id="h-crossbar"></div>   
+			    	</div>
+					<div class="letter letter-t">
+						<div class="base-circ1" id="t-base-top"></div>
+						<div class="counter-rect-med" id="t-rect-counter-med"></div>
+						<div class="counter-rect-med" id="t-rect-counter-med-bottom"></div>
+						<div class="counter-med" id="t-counter-med"></div>
+						<div class="terminal-big" id="t-terminal-big"></div>
+						<div class="semi-circ-big" id="t-semi-circ-big-top"></div>
+						<div class="semi-circ-big" id="t-semi-circ-extra"></div>
+						<div class="crossbar" id="t-crossbar"></div>
+						<div class="crossbar" id="t-corner"></div> 
+						<div class="counter-rect-med" id="t-rect-counter-med-right"></div>
+						<div class="counter-big" id="t-counter-big-left"></div>
+						<div class="counter-big" id="t-counter-big-right"></div>
+						<div class="counter-rect-med" id="t-rect-counter-med2"></div>
+					</div>
+			</div>
+
+			<div class="series-title seminars">
+					<div class="letter letter-s">
+						<div class="base-circ3" id="s-base-top"></div>
+						<div class="counter-rect-big" id="s-rect-counter-big"></div>
+						<div class="base-circ2" id="s-base-bottom"></div>
+						<div class="counter-rect-med" id="s-rect-counter-med"></div>
+						<div class="terminal-big" id="s-terminal-big"></div>
+						<div class="terminal-small" id="s-terminal-small"></div>
+						<div class="semi-circ-big" id="s-semi-circ-big-top"></div>
+						<div class="counter-med" id="s-counter-med"></div>
+						<div class="counter-big" id="s-counter-big-right"></div>
+						<div class="counter-big" id="s-counter-big-left"></div>
+						<div class="crossbar" id="s-crossbar"></div>
+					</div>
+			    	<div class="letter letter-e"> 
+						<div class="base-circ1" id="e-base"></div>
+						<div class="counter-rect-med" id="e-rect-counter-med"></div>
+						<div class="counter-med" id="e-counter-med"></div>   
+						<div class="semi-circ-big" id="e-semi-circ-top"></div>
+						<div class="terminal-big" id="e-terminal-big"></div>
+						<div class="counter-big" id="e-counter-big-top"></div>
+						<div class="counter-big" id="e-counter-big-bottom"></div>
+						<div class="crossbar" id="e-crossbar"></div>
+			    	</div>
+			    	<div class="letter letter-m">    		
+						<div class="base-circ1" id="m-base-left"></div>
+						<div class="counter-rect-big" id="m-rect-counter-big-right"></div>	
+						<div class="base-circ1" id="m-base-right"></div>
+						<div class="terminal-small" id="m-ear"></div>
+						<div class="terminal-small" id="m-ear-extra"></div>
+						<div class="terminal-big" id="m-terminal-bottom"></div>	
+						<div class="counter-small" id="m-counter-ear"></div>
+						<div class="counter-big" id="m-counter-big-bottom"></div>
+						<div class="counter-med" id="m-counter-med-left"></div> 		
+						<div class="counter-med" id="m-counter-med-right"></div>
+			    	</div>
+			    	<div class="letter letter-i">    		
+						<div class="base-circ1" id="i-base"></div>
+						<div class="counter-rect-med" id="i-rect-counter-med"></div>
+						<div class="terminal-big" id="i-terminal-bottom"></div>
+						<div class="counter-rect-med" id="i-rect-counter-med-left"></div>
+						<div class="counter-med" id="i-counter-med"></div> 
+						<div class="counter-big" id="i-counter-big-bottom"></div>
+			    	</div>
+					<div class="letter letter-n">    		
+						<div class="base-circ1" id="n-base"></div>
+						<div class="terminal-small" id="n-ear"></div>
+						<div class="terminal-small" id="n-ear-extra"></div>
+						<div class="terminal-big" id="n-terminal-bottom"></div>	
+						<div class="counter-small" id="n-counter-ear"></div>
+						<div class="counter-big" id="n-counter-big-bottom"></div>
+						<div class="counter-med" id="n-counter-med"></div> 
+			    	</div>
+			    	<div class="letter letter-a"> 	
+						<div class="terminal-big" id="a-terminal-big"></div>
+						<div class="terminal-small" id="a-ear"></div>
+						<div class="terminal-small" id="a-ear-extra"></div>
+						<div class="counter-big" id="a-counter-big"></div>
+						<div class="counter-rect-big" id="a-rect-counter-big"></div>
+						<div class="counter-small" id="a-counter-ear"></div>
+						<div class="terminal-small" id="a-terminal-small"></div>
+						<div class="crossbar" id="a-leg"></div>
+						<div class="base-circ1" id="a-base"></div>
+						<div class="counter-med" id="a-counter-med"></div>
+						<div class="crossbar" id="a-crossbar"></div>
+			    	</div>
+					<div class="letter letter-r">    		
+						<div class="base-circ1" id="r-base"></div>
+						<div class="terminal-big" id="r-terminal-bottom"></div>	
+						<div class="terminal-small" id="r-ear"></div>
+						<div class="terminal-small" id="r-ear-extra"></div>
+						<div class="counter-rect-big" id="r-rect-counter-big-right"></div>
+						<div class="counter-big" id="r-counter-big-right"></div>
+						<div class="counter-big" id="r-counter-big-bottom"></div>
+						<div class="counter-med" id="r-counter-med-top"></div> 	
+						<div class="counter-med" id="r-counter-med-bottom"></div>
+						<div class="counter-small" id="r-counter-ear"></div>
+						<div class="semi-circ-big" id="r-semi-circ-top"></div>
+						<div class="semi-circ-big" id="r-semi-circ-bottom"></div>
+			    	</div>
+					<div class="letter letter-s">
+						<div class="base-circ3" id="s-base-top"></div>
+						<div class="counter-rect-big" id="s-rect-counter-big"></div>
+						<div class="base-circ2" id="s-base-bottom"></div>
+						<div class="counter-rect-med" id="s-rect-counter-med"></div>
+						<div class="terminal-big" id="s-terminal-big"></div>
+						<div class="terminal-small" id="s-terminal-small"></div>
+						<div class="semi-circ-big" id="s-semi-circ-big-top"></div>
+						<div class="counter-med" id="s-counter-med"></div>
+						<div class="counter-big" id="s-counter-big-right"></div>
+						<div class="counter-big" id="s-counter-big-left"></div>
+						<div class="crossbar" id="s-crossbar"></div>
+					</div>
+			</div>
+
+
+	<div class="footer footer-left">
+		<a href="https://www.mcluhancentre.ca/" target="_blank">mcluhancentre.ca</a>
+	</div>
+
+	<div class="footer footer-right">
+		<a href="https://www.mcluhancentre.ca/" target="_blank">mcluhancentre.ca</a>
+	</div>
+
+
+
+	<div class="sidebar sidebar-left">
+		<a class="post-link post-link-info shared-area-1" href="#info">Info</a>
+		<a class="post-link post-link-sept-17 shared-area-2" href="#sept-17">Sept 17</a>
+		<a class="post-link post-link-oct-1 shared-area-3" href="#oct-1">Oct 1</a>
+		<a class="post-link post-link-oct-22 shared-area-4" href="#oct-22">Oct 22</a>
+		<a class="post-link post-link-nov-5 shared-area-5" href="#nov-5">Nov 5</a>
+		<a class="post-link post-link-nov-19 shared-area-6" href="#nov-19">Nov 19</a>
+		<a class="post-link post-link-dec-3 shared-area-7" href="#dec-3">Dec 3</a>
+	</div>
+
+	<div class="sidebar sidebar-right">
+		<a class="post-link post-link-dec-3 shared-area-7" href="#dec-3">Dec 3</a>
+		<a class="post-link post-link-nov-19 shared-area-6" href="#nov-19">Nov 19</a>
+		<a class="post-link post-link-nov-5 shared-area-5" href="#nov-5">Nov 5</a>
+		<a class="post-link post-link-oct-22 shared-area-4" href="#oct-22">Oct 22</a>
+		<a class="post-link post-link-oct-1 shared-area-3" href="#oct-1">Oct 1</a>
+		<a class="post-link post-link-sept-17 shared-area-2" href="#sept-17">Sept 17</a>
+		<a class="post-link post-link-info shared-area-1" href="#info">Info</a>
+	</div>
+
+
+
+
+
+
+	<a class="post-bg-link" href="#info">
+		<div class="post write-up shared-area-1a" id="info">
+			<p>McLuhan<span class="apostrophe">’</span>s <i>The Mechanical Bride: Folklore of Industrial Man</i> acts as inspiration for this year<span class="apostrophe">’</span>s <span class="baseline-up">(</span>2019/20<span class="baseline-up">)</span> investigation of machinic logics in culture. Evolving from last year<span class="apostrophe">’</span>s considerations in <i>MsUnderstanding Media</i>, the series asks what it looks like if we don<span class="apostrophe">’</span>t believe the hype?</p>
+
+			<!-- <p class="indent">Delving into smart cities, data justice, robots + AI, hard + soft ware, quantified selfhood, alternative sensory experiences, and militaristic media, it raises questions: What is the consensual narrative of the “tech bro” today? What are the implications of this folklore on how we both understand and act in our day-to-day lives? What is the promise and where is it not being kept? How do we use technology to upend the machinic logics of the <i>Mechanical Bro</i>?</p> -->
+
+			<p class="indent">Speakers for the Winter 2019 program include: Simone Browne, Shannon Mattern, Zach Blas, plus more soon...</p>
+		</div>
+	</a>
+			​
+
+	<a class="post-bg-link" href="#sept-17">
+		<div class="post event shared-area-2a" id="sept-17">
+			<div class="date"><span class="baseline-up2">//</span> September 17 <span class="baseline-up2">//</span></div>
+
+			<div class="event-title">
+				platform mechanics and the undercommons
+			</div>
+
+			<span class="name">Lisa Nakamura<span class="affiliation">—University of Michigan, Ann Arbor</span></span> <span class="name">Tara McPherson<span class="affiliation">—University of Southern California</span></span>
+		</div>
+	</a>
+			​
+	<a class="post-bg-link" href="#oct-1">
+		<div class="post event shared-area-3a" id="oct-1">
+			<div class="date"><span class="baseline-up2">//</span> October 1 <span class="baseline-up2">//</span></div>
+
+			<div class="event-title">
+				Building: &lt;Black&gt; &lt;Feminist&gt; / &lt;Queer&gt; &lt;Digital&gt; &lt;Justice&gt; </br>Query: Community Activators
+			</div>
+
+			<span class="name">Ladan Siad<span class="affiliation">—Data Justice Researcher, Technoscience Research Unit, Toronto</span></span> <span class="name">Nasma Ahmed<span class="affiliation">—Director, Digital Justice Lab, Toronto</span></span>
+		</div>
+	</a>
+
+	<a class="post-bg-link" href="#oct-22">
+		<div class="post event shared-area-4a" id="oct-22">
+			<div class="date"><span class="baseline-up2">//</span> October 22 <span class="baseline-up2">//</span></div>
+
+			<div class="event-title event-title-baseline-down">
+				CTRL<span class="baseline-up">:</span>CMD<span class="baseline-up">:</span>EXE <span class="baseline-down">&lt;</span>an evening on media war<span class="baseline-down">&gt;</span>
+			</div>
+
+			<span class="name">Megan Boler<span class="affiliation">—University of Toronto</span></span> <span class="name">Jeremy Packer<span class="affiliation">—University of Toronto</span></span> <span class="name">Geoffrey Winthrop-Young<span class="affiliation">—University of British Columbia</span></span>
+		</div>
+	</a>
+
+	<a class="post-bg-link" href="#nov-5">
+		<div class="post event shared-area-5a" id="nov-5">
+			<div class="date"><span class="baseline-up2">//</span> November 5 <span class="baseline-up2">//</span></div>
+			<div class="event-title">
+				Senses_Sensibilities + Touch_Technology
+			</div>
+
+			<span class="name">Rhonda McEwen<span class="affiliation">—University of Toronto</span></span> <span class="name">David Parisi<span class="affiliation">—College of Charleston</span></span>
+		</div>
+	</a>
+
+	<a class="post-bg-link" href="#nov-19">
+		<div class="post event shared-area-6a" id="nov-19">
+			<div class="date"><span class="baseline-up2">//</span> November 19 <span class="baseline-up2">//</span></div>
+			<div class="event-title">
+				#Fitter #Happier #MoreProductive
+			</div>
+
+			</br><span class="name">Melissa Gregg<span class="affiliation">—Intel Corporation</span></span> <span class="name">Allison Hearn<span class="affiliation">—University of Western Ontario</span></span> <span class="name">Natasha Dow Schull<span class="affiliation">—New York University</span></span>
+		</div>
+	</a>
+
+	<a class="post-bg-link" href="#dec-3">
+		<div class="post event shared-area-7a" id="dec-3">
+			<div class="date"><span class="baseline-up2">//</span> December 3 <span class="baseline-up2">//</span></div>
+
+			<div class="event-title">Re/Figuration: Digital Tactics 4 Digital Colonialism
+			</div>
+
+			<span class="name">Moreshin Allahyari<span class="affiliation">—New Media Artist, New York City</span></span>
+		</div>
+	</a>
+
+	<a class="post-bg-link">
+		<div class="post event" id="secret">
+			<div class="date">Sticky Just Don't Work</div>
+
+			<div class="event-title">I'm just trying to cheat my way through position: sticky
+			</div>
+
+			<span>Position: Sticky<span>—Not working (it is not very cooperative at all)</span></span>
+		</div>
+	</a>
+
+	<p class="footer corner footer-top-left">The <i>Monday Night Seminars</i> carry on the tradition of...</p>
+
+	<p class="footer corner footer-bottom-left">...Marshall McLuhan<span class="apostrophe">’</span>s public seminars at the University of Toronto.</p>
+
+	<p class="footer corner footer-top-right"><span class="baseline-up">(</span>416<span class="baseline-up">)</span> 978<span class="baseline-up hyphen">-</span>7026</p>
+
+	<p class="footer corner footer-bottom-right">39A Queens Park Crescent East</br>Toronto, Ontario</br>M5S 3C3</p>
+
+	<p class="hidden-message">The McLuhan Centre for Culture and Technology's original constitution acts as a guiding template, not only for what McLuhan intended happen here, but as a framework to explore the relevance of his work in a contemporary landscape. There is a revolving renaissance around McLuhan: he is lauded then dismissed, seemingly put to rest, before being resuscitated once again. While McLuhan himself might not have had his eyes directly on economics, politics, and bodies, if the original theory of the “the medium is the message” is carried through - where the message of the medium is the change in pace, pattern and scale a media introduces into human affairs - then the message of the medium is also an invitation to consider social structures and power dynamics. The McLuhan Centre for Culture and Technology is a destination for the interdisciplinary consideration, unraveling, and reconstitution of a McLuhanesque capturing of technological life.</p>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+    </body>
+</html>
