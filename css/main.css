@@ -1,0 +1,716 @@
+/* 
+
+Happy Times at the IKOB by Lucas Le Bihan
+(Also the designer for Sporting Grotesque! Love that font!)
+
+http://velvetyne.fr/fonts/happy-times/
+
+Font files retrieved from: https://gitlab.com/velvetyne/Happy-Times-at-the-IKOB/tree/b9dc07184f32409c35924effe6e0fc66e729d011
+
+*/
+
+@font-face {
+	font-family: ikob;
+	src: url('../fonts/happy-times-at-the-ikob-webfont.woff') format('woff'),
+		url('../fonts/happy-times-at-the-ikob-webfont.woff2') format('woff2');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: ikob;
+	src: url('../fonts/happy-times-at-the-ikob_italic-webfont.woff') format('woff'),
+		url('../fonts/happy-times-at-the-ikob_italic-webfont.woff2') format('woff2');
+	font-style: italic;
+}
+
+/*
+
+Trickster by Jean-Baptiste Morizot
+(For a look into the thinking/inspiration/design behind this font read the post-mortem of this font here: http://velvetyne.fr/news/trickster-a-postmortem/)
+
+http://velvetyne.fr/fonts/trickster/
+
+Font files retrieved from: https://github.com/velvetyne/Trickster
+
+*/
+
+@font-face {
+	font-family: trickster;
+	src: url('../fonts/Trickster-Regular.eot'),
+		url('../fonts/Trickster-Regular.woff'),
+		url('../fonts/Trickster-Regular.woff2');
+}
+
+
+
+
+/*ANIMATION*/
+
+@keyframes font-flip {
+	0% {font-family: ikob};
+	50% {font-family: trickster};
+	100% {font-family: ikob};
+}
+
+
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+	width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: black;
+	height: 10rem;
+}
+
+::-moz-selection {
+	background-color: rgba(0,0,0,0.99);
+	color: rgba(0,255,0,1);
+}
+
+::selection {
+	background-color: rgba(0,0,0,0.99);
+	color: rgba(0,255,0,1);
+}
+
+body {
+
+
+	font-family: ikob;
+	font-size: 24px;
+}
+
+
+
+
+
+
+
+p {
+	margin: 0rem;
+}
+
+.indent {
+	text-indent: 4rem;
+}
+
+.organization-title {
+	position: fixed;
+	top: 2rem;
+	left: 0;
+	margin-left: 27rem;
+	margin-right: 27rem;
+
+	text-align: center;
+	font-size: calc(5.5vw - 3rem);
+	line-height: calc(5.5vw - 3rem);
+
+	/*background-color: red;*/
+}
+
+.presents {
+	font-family: trickster;
+	font-size: 3rem;
+	line-height: 3rem;
+}
+
+.series-title {
+	position: fixed;
+	z-index: -100;
+	user-select: none;
+}
+
+.monday {
+	top: calc(35vh - 5rem);
+	left: -13rem;
+	transform: scale(0.45) rotate(90deg);
+
+	mix-blend-mode: multiply;
+	z-index: 100;
+
+	transition-duration: 0.2s;
+}
+
+.monday:hover {
+	left: -15.6rem;
+	transform: scale(0.78) rotate(90deg);
+}
+
+	.monday:hover .base-circ1, .base-circ2, .base-circ3 {
+		border-radius: 0;
+		position: fixed;
+	}
+
+	.monday:hover .terminal-big, .terminal-small {
+		border-radius: 0;
+		position: fixed;
+	}
+
+	.monday:hover .semi-circ-big {
+		border-radius: 0;
+		position: fixed;
+	}
+
+.night {
+	bottom: -3.2rem;
+	left: calc(50vw - 17rem);
+	transform: scale(0.45);
+
+	mix-blend-mode: multiply;
+	z-index: 100;
+
+	transition-duration: 0.2s;
+}
+
+.night:hover {
+	bottom: -3rem;
+	transform: scale(0.78);
+}
+
+	.night:hover .base-circ1, .base-circ2, .base-circ3 {
+		border-radius: 0;
+		position: fixed;
+	}
+
+	.night:hover .terminal-big, .terminal-small {
+		border-radius: 0;
+		position: fixed;
+	}
+
+	.night:hover .semi-circ-big {
+		border-radius: 0;
+		position: fixed;
+	}
+
+.seminars {
+	top: calc(5vh + 9rem);
+	right: -19rem;
+	transform: scale(0.45) rotate(-90deg);
+
+	mix-blend-mode: multiply;
+	z-index: 100;
+
+	transition-duration: 0.2s;
+}
+
+.seminars:hover {
+	right: -22.2rem;
+	transform: scale(0.78) rotate(-90deg);
+}
+
+	.seminars:hover .base-circ1, .base-circ2, .base-circ3 {
+		border-radius: 0;
+		position: fixed;
+	}
+
+	.seminars:hover .terminal-big, .terminal-small {
+		border-radius: 0;
+		position: fixed;
+	}
+
+	.seminars:hover .semi-circ-big {
+		border-radius: 0;
+		position: fixed;
+	}
+
+.footer {
+	position: fixed;
+
+	font-size: 2rem;
+}
+
+.footer a {
+	padding: 0rem 0.5rem 0.25rem 0.5rem;
+
+	font-family: trickster;
+	color: rgba(0,0,0,1);
+	text-decoration: none;
+
+	animation: font-flip 1s infinite;
+	animation-timing-function: linear;
+}
+
+.footer:hover a {
+	color: rgba(0,255,0,1);
+	background-color: rgba(0,0,0,1);
+}
+
+.footer-left {
+	top: 42vh;
+	left: -5rem;
+	transform: rotate(90deg);
+}
+
+.footer-right {
+	top: 42vh;
+	right: -5rem;
+	transform: rotate(-90deg);
+}
+
+.footer-left.hovering a,
+.footer-right.hovering a {
+	background-color: rgba(0,0,0,1);
+	color: rgba(0,255,0,1);
+}
+
+
+
+
+.footer.corner {
+	position: fixed;
+	width: 15.75rem;
+}
+
+
+.footer-top-left {
+	top: 2rem;
+	left: 2rem;
+
+	text-align: left;
+}
+
+.footer-bottom-left {
+	bottom: 2rem;
+	left: 2rem;
+
+	text-align: left;
+}
+
+.footer-top-right {
+	top: 2rem;
+	right: 2rem;
+	margin-top: -0.09px;
+
+	text-align: right;
+}
+
+.footer-bottom-right {
+	bottom: 2rem;
+	right: 2rem;
+
+	text-align: right;
+}
+
+
+
+
+
+.hyphen {
+	margin-left: 3px;
+	margin-right: 2px;
+}
+
+.apostrophe {
+	margin-right: -0.08em;
+}
+
+.baseline-up {
+	vertical-align: 0.09em;
+}
+
+.baseline-up2 {
+	vertical-align: 0.05em;
+}
+
+#info, 
+#sept-17, 
+#oct-1, 
+#oct-22, 
+#nov-5,
+#nov-19,
+#dec-3 {
+	margin-top: 0.05em;
+}
+
+.baseline-down {
+	vertical-align: -0.09em;
+}
+
+.event-title-baseline-down {
+	width: 105%;
+	margin-top: 0.09em;
+}
+
+
+
+.sidebar {
+	position: fixed;
+	width: calc(100vh);
+	height: calc(8vh);
+	padding-top: 2vh;
+	padding-left: 1vh;
+
+	background-color: rgba(0,0,0,1);
+
+	overflow: auto;
+	white-space: nowrap;
+}
+
+.sidebar-left {
+	top: -10vh;
+	left: 18.5rem;
+
+	transform: rotate(90deg);
+	transform-origin: 0% 100%;
+}
+
+.sidebar-right {
+	top: -0.5rem;
+	right: calc(27.5rem - 4rem);
+
+	transform: rotate(-90deg);
+	transform-origin: 100% 0%;
+}
+
+.sidebar a {
+	display: inline;
+	margin-top: 1rem;
+	margin-left: 0.9rem;
+
+	font-family: trickster;
+	font-size: calc(5.5vh - 0.5rem);
+
+	color: rgba(0,255,0,1);
+	text-decoration: none;
+}
+
+.post-link:hover {
+	/*color: rgba(255,255,0,1);*/
+}
+.shared-area-1.hovering,
+.post-link-info:hover {
+	color: rgba(255,255,0,1);
+}
+.shared-area-2.hovering,
+.post-link-sept-17:hover {
+	color: rgba(255,255,0,1);
+}
+.shared-area-3.hovering,
+.post-link-oct-1:hover {
+	color: rgba(255,255,0,1);
+}
+.shared-area-4.hovering,
+.post-link-oct-22:hover {
+	color: rgba(255,255,0,1);
+}
+.shared-area-5.hovering,
+.post-link-nov-5:hover {
+	color: rgba(255,255,0,1);
+}
+.shared-area-6.hovering,
+.post-link-nov-19:hover {
+	color: rgba(255,255,0,1);
+}
+.shared-area-7.hovering,
+.post-link-dec-3:hover {
+	color: rgba(255,255,0,1);
+}
+
+
+
+
+.post {
+	position: sticky;
+	padding: 4rem;
+	margin: 0rem 25rem 0rem 25rem;
+	margin-bottom: 75vh;
+
+	border: 0.2rem rgba(0,0,0,1) solid;
+	box-shadow: 0.8rem 0.8rem rgba(0,0,0,1);
+	background-color: rgba(0,255,0,1);
+
+	z-index: 101;
+	cursor: pointer;
+}
+
+.shared-area-1a.hovering,
+.shared-area-2a.hovering,
+.shared-area-3a.hovering,
+.shared-area-4a.hovering,
+.shared-area-5a.hovering,
+.shared-area-6a.hovering,
+.shared-area-7a.hovering,
+.post:hover {
+	background-color: rgba(255,255,0,1);
+}
+
+.post-bg-link {
+	text-decoration: none;
+	color: rgba(0,0,0,1);
+	cursor: default;
+
+	z-index: 200;
+}
+
+.post {
+	top: 9rem;
+}
+
+#sept-17 {
+	top: 10rem;
+}
+
+#oct-1 {
+	top: 11rem;
+}
+
+#oct-22 {
+	top: 12rem;
+}
+
+#nov-5 {
+	top: 13rem;
+}
+
+#nov-19 {
+	top: 14rem;
+}
+
+#dec-3 {
+	top: 15rem;
+}
+
+#secret {
+	opacity: 0;
+	z-index: -200;
+}
+
+.date {
+	margin-bottom: 1rem;
+
+	font-family: trickster;
+	font-size: 2.25rem;
+	text-align: center;
+}
+
+.event-title {
+    display: block;
+	position: relative;
+	margin-bottom: 1rem;
+    display:inline-block;
+}
+
+.event-title:hover {
+	font-style: italic;
+}
+
+.name span {
+    visibility: hidden;
+}
+
+.name:hover .affiliation {
+    visibility: visible;
+}
+
+.affiliation {
+	font-style: italic;
+}
+
+
+.hidden-message {
+	position: fixed;
+	margin-left: 27rem;
+	margin-right: 27rem;
+	top: 30vh;
+	left: 0;
+
+	font-family: trickster;
+	font-size: 1rem;
+	text-align: justify;
+	line-height: 1.35rem;
+
+	z-index: -200;
+}
+
+
+
+@media only screen and (max-height: 755px) {
+
+	.monday {
+		transform: scale(0.4) rotate(90deg);
+	}
+
+	.night {
+		bottom: -5.2rem;
+		transform: scale(0.4);
+	}
+
+	.seminars {
+		top: calc(5vh + 8rem);
+		transform: scale(0.4) rotate(-90deg);
+	}
+}
+
+@media only screen and (max-height: 700px) {
+
+	.monday {
+		transform: scale(0.35) rotate(90deg);
+	}
+
+	.night {
+		bottom: -5.2rem;
+		transform: scale(0.35);
+	}
+
+	.seminars {
+		top: calc(5vh + 7rem);
+		transform: scale(0.35) rotate(-90deg);
+	}
+
+	.footer {
+		font-size: 1.75rem;
+	}
+
+	body {
+		font-size: 22px; /*orig 24px*/
+	}
+
+	.indent {
+		text-indent: 3.66rem;
+	}
+
+	.post {
+		padding: 3.5rem;
+	}
+
+	.date {
+		font-size: 1.6875rem; /*orig 2.25rem*/
+	}
+
+	.hidden-message {
+		/*font-size: 0.75rem; /*orig 1rem*/
+		/*line-height: 1.0125rem; /*orig 1.35rem*/
+	}
+
+}
+
+@media only screen and (max-height: 635px) {
+
+	.monday {
+		transform: scale(0.3) rotate(90deg);
+	}
+
+	.night {
+		bottom: -5.7rem;
+		transform: scale(0.3);
+	}
+
+	.seminars {
+		top: calc(5vh + 5rem);
+		transform: scale(0.3) rotate(-90deg);
+	}
+}
+
+@media only screen and (max-width: 1275px) {
+
+	.organization-title {
+		margin-left: 25rem;
+		margin-right: 25rem;
+		/*font-size: calc(5.4vw - 2.72rem);*/
+		/*line-height: calc(5.4vw - 2.72rem);*/
+		font-size: 1.6rem;
+		line-height: 1.8rem;
+	}
+
+	.presents {
+		font-size: 2rem;
+	}
+
+	.monday {
+		left: -15rem;
+		/*transform: scale(0.35) rotate(90deg);*/
+	}
+
+	.night {
+		/*bottom: -6.2rem;*/
+		/*transform: scale(0.35);*/
+	}
+
+	.seminars {
+		right: -21rem;
+		/*transform: scale(0.35) rotate(-90deg);*/
+	}
+
+	.footer {
+		font-size: 1.75rem;
+	}
+
+	.footer.corner {
+		width: 13.75rem;
+	}
+
+	.sidebar-left {
+		left: 16.5rem;
+	}
+
+	.sidebar-right {
+		right: 21.5rem;
+	}
+
+	body {
+		font-size: 18px; /*orig 24px*/
+	}
+
+	.indent {
+		text-indent: 3rem;
+	}
+
+	.post {
+		padding: 3rem;
+		margin: 0rem 23rem 100vh 23rem;
+	}
+
+	.date {
+		font-size: 1.45rem; /*orig 2.25rem*/
+	}
+
+	.hidden-message {
+		margin-left: 25rem;
+		margin-right: 25rem;
+		font-size: 0.7rem; /*orig 1rem*/
+		line-height: 1rem; /*orig 1.35rem*/
+	}
+
+}
+
+
+@media only screen and (max-width: 1188px) {
+
+	body {
+		font-size: 16px; /*orig 24px*/
+	}
+
+	.indent {
+		text-indent: 2.66rem;
+	}
+
+	.post {
+		padding: 2rem;
+	}
+
+	.date {
+		font-size: 1.6875rem; /*orig 2.25rem*/
+	}
+
+	.hidden-message {
+		font-size: 0.6rem; /*orig 1rem*/
+		line-height: 0.875rem; /*orig 1.35rem*/
+	}
+
+}
+
+@media only screen and (max-width: 1210px) {
+
+}
+
+
+
+
+
+
+
