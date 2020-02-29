@@ -136,23 +136,15 @@ $(".footer").hover(function(){
             if (mpoints.length > mpoints_max)
                 mpoints.splice(0,1);
             mousetravel = 0;
-            // $("#mousespeed").sparkline(mpoints, { width: mpoints.length*2, tooltipSuffix: ' pixels per second' });
         }
 
         lastmousetime = timenow;
         setTimeout(mdraw, mrefreshinterval);
 
-		// console.log("mpoints: " + mpoints[mpoints.length-1]);
-		// console.log("timenow: " + timenow);
-		// console.log("lastmousetime: " + lastmousetime);
-		console.log(pps);
+		// console.log(pps);
 
 		if (pps >= 1700) {
 			$("body").css({'background-color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
-			// $(".footer a").css({'color':'rgb(0,0,0)'});
-			// $(".footer:hover a").css({'color':'rgb(255,255,0)'});
-			// $(".sidebar a").css({'color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
-			// $(".post").css({'background-color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
 			$(".letter").css({'background-color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-big").css({'background-color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-med").css({'background-color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
@@ -160,14 +152,10 @@ $(".footer").hover(function(){
 			$(".counter-rect-big").css({'background-color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-med").css({'background-color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-small").css({'background-color':'rgb(255,255,0)', 'transition-duration':'0.4s'});
-        	console.log("Mouse speed is greater than (or equal to) 1700.");
+        	// console.log("Mouse speed is greater than (or equal to) 1700.");
         }
         if (pps >= 1450 && pps < 1700) {
 			$("body").css({'background-color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
-			// $(".footer a").css({'color':'rgb(0,0,0)'});
-			// $(".footer:hover a").css({'color':'rgb(225,255,0)'});
-			// $(".sidebar a").css({'color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
-			// $(".post").css({'background-color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
 			$(".letter").css({'background-color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-big").css({'background-color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-med").css({'background-color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
@@ -175,14 +163,10 @@ $(".footer").hover(function(){
 			$(".counter-rect-big").css({'background-color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-med").css({'background-color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-small").css({'background-color':'rgb(225,255,0)', 'transition-duration':'0.4s'});
-        	console.log("Mouse speed is between 1450 and 1699.");
+        	// console.log("Mouse speed is between 1450 and 1699.");
         }
         if (pps >= 1200 && pps < 1450) {
 			$("body").css({'background-color':'rgb(195,255,0)', 'transition-duration':'0.4s'});
-			// $(".footer a").css({'color':'rgb(0,0,0)'});
-			// $(".footer:hover a").css({'color':'rgb(195,255,0)'});
-			// $(".sidebar a").css({'color':'rgb(195,255,0)', 'transition-duration':'0.4s'});
-			// $(".post").css({'background-color':'rgb(195,255,0)', 'transition-duration':'0.4s'});
 			$(".letter").css({'background-color':'rgb(195,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-big").css({'background-color':'rgb(195,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-med").css({'background-color':'rgb(195,255,0)', 'transition-duration':'0.4s'});
@@ -190,14 +174,10 @@ $(".footer").hover(function(){
 			$(".counter-rect-big").css({'background-color':'rgb(195,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-med").css({'background-color':'rgb(195,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-small").css({'background-color':'rgb(195,255,0)', 'transition-duration':'0.4s'});
-        	console.log("Mouse speed is between 1200 and 1449.");
+        	// console.log("Mouse speed is between 1200 and 1449.");
         }
         if (pps >= 950 && pps < 1200) {
 			$("body").css({'background-color':'rgb(165,255,0)', 'transition-duration':'0.4s'});
-			// $(".footer a").css({'color':'rgb(0,0,0)'});
-			// $(".footer:hover a").css({'color':'rgb(165,255,0)'});
-			// $(".sidebar a").css({'color':'rgb(165,255,0)', 'transition-duration':'0.4s'});
-			// $(".post").css({'background-color':'rgb(165,255,0)', 'transition-duration':'0.4s'});
 			$(".letter").css({'background-color':'rgb(165,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-big").css({'background-color':'rgb(165,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-med").css({'background-color':'rgb(165,255,0)', 'transition-duration':'0.4s'});
@@ -205,14 +185,10 @@ $(".footer").hover(function(){
 			$(".counter-rect-big").css({'background-color':'rgb(165,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-med").css({'background-color':'rgb(165,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-small").css({'background-color':'rgb(165,255,0)', 'transition-duration':'0.4s'});
-        	console.log("Mouse speed is between 950 and 1199.");
+        	// console.log("Mouse speed is between 950 and 1199.");
         }
         if (pps >= 700 && pps < 950) {
 			$("body").css({'background-color':'rgb(135,255,0)', 'transition-duration':'0.4s'});
-			// $(".footer a").css({'color':'rgb(0,0,0)'});
-			// $(".footer:hover a").css({'color':'rgb(135,255,0)'});
-			// $(".sidebar a").css({'color':'rgb(135,255,0)', 'transition-duration':'0.4s'});
-			// $(".post").css({'background-color':'rgb(135,255,0)', 'transition-duration':'0.4s'});
 			$(".letter").css({'background-color':'rgb(135,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-big").css({'background-color':'rgb(135,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-med").css({'background-color':'rgb(135,255,0)', 'transition-duration':'0.4s'});
@@ -220,14 +196,10 @@ $(".footer").hover(function(){
 			$(".counter-rect-big").css({'background-color':'rgb(135,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-med").css({'background-color':'rgb(135,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-small").css({'background-color':'rgb(135,255,0)', 'transition-duration':'0.4s'});
-        	console.log("Mouse speed is between 700 and 949.");
+        	// console.log("Mouse speed is between 700 and 949.");
         }
         if (pps >= 450 && pps < 700) {
 			$("body").css({'background-color':'rgb(105,255,0)', 'transition-duration':'0.4s'});
-			// $(".footer a").css({'color':'rgb(0,0,0)'});
-			// $(".footer:hover a").css({'color':'rgb(105,255,0)'});
-			// $(".sidebar a").css({'color':'rgb(105,255,0)', 'transition-duration':'0.4s'});
-			// $(".post").css({'background-color':'rgb(105,255,0)', 'transition-duration':'0.4s'});
 			$(".letter").css({'background-color':'rgb(105,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-big").css({'background-color':'rgb(105,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-med").css({'background-color':'rgb(105,255,0)', 'transition-duration':'0.4s'});
@@ -235,14 +207,10 @@ $(".footer").hover(function(){
 			$(".counter-rect-big").css({'background-color':'rgb(105,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-med").css({'background-color':'rgb(105,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-small").css({'background-color':'rgb(105,255,0)', 'transition-duration':'0.4s'});
-        	console.log("Mouse speed is between 450 and 699.");
+        	// console.log("Mouse speed is between 450 and 699.");
         }
         if (pps >= 200 && pps < 450) {
 			$("body").css({'background-color':'rgb(50,255,0)', 'transition-duration':'0.4s'});
-			// $(".footer a").css({'color':'rgb(0,0,0)'});
-			// $(".footer:hover a").css({'color':'rgb(50,255,0)'});
-			// $(".sidebar a").css({'color':'rgb(50,255,0)', 'transition-duration':'0.4s'});
-			// $(".post").css({'background-color':'rgb(50,255,0)', 'transition-duration':'0.4s'});
 			$(".letter").css({'background-color':'rgb(50,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-big").css({'background-color':'rgb(50,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-med").css({'background-color':'rgb(50,255,0)', 'transition-duration':'0.4s'});
@@ -250,14 +218,10 @@ $(".footer").hover(function(){
 			$(".counter-rect-big").css({'background-color':'rgb(50,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-med").css({'background-color':'rgb(50,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-small").css({'background-color':'rgb(50,255,0)', 'transition-duration':'0.4s'});
-        	console.log("Mouse speed is between 200 and 449.");
+        	// console.log("Mouse speed is between 200 and 449.");
         }
         if (pps < 200) {
 			$("body").css({'background-color':'rgb(0,255,0)', 'transition-duration':'0.4s'});
-			// $(".footer a").css({'color':'rgb(0,0,0)'});
-			// $(".footer:hover a").css({'color':'rgb(0,255,0)'});
-			// $(".sidebar a").css({'color':'rgb(0,255,0)', 'transition-duration':'0.4s'});
-			// $(".post").css({'background-color':'rgb(0,255,0)', 'transition-duration':'0.4s'});
 			$(".letter").css({'background-color':'rgb(0,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-big").css({'background-color':'rgb(0,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-med").css({'background-color':'rgb(0,255,0)', 'transition-duration':'0.4s'});
@@ -265,7 +229,7 @@ $(".footer").hover(function(){
 			$(".counter-rect-big").css({'background-color':'rgb(0,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-med").css({'background-color':'rgb(0,255,0)', 'transition-duration':'0.4s'});
 			$(".counter-rect-small").css({'background-color':'rgb(0,255,0)', 'transition-duration':'0.4s'});
-        	console.log("Mouse speed is less than 200.");
+        	// console.log("Mouse speed is less than 200.");
         }
     }
 
@@ -301,27 +265,88 @@ var isEdgeChromium = isChrome && (navigator.userAgent.indexOf("Edg") != -1);
 var isBlink = (isChrome || isOpera) && !!window.CSS;
 
 
+// if (isOpera = true || isFirefox = true || isSafari = true || isIE = true || isEdge = true) {
+// 	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
+// }
+
+// if (isOpera = true) {
+// 	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
+// }
+
+// if (isFirefox = true) {
+// 	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
+// }
+
+// if (isSafari = true) {
+// 	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
+// }
+
+// if (isIE = true) {
+// 	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
+// }
+
+// if (isEdge = true) {
+// 	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
+// }
 
 
-if (isOpera = true) {
-	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
-}
 
-if (isFirefox = true) {
-	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
-}
 
-if (isSafari = true) {
-	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
-}
 
-if (isIE = true) {
-	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
-}
+ 
+function checkBrowser() { 
+          
+	// Get the user-agent string 
+	let userAgentString =  
+		navigator.userAgent; 
+          
+	// Detect Chrome 
+	let chromeAgent =  
+		userAgentString.indexOf("Chrome") > -1; 
+          
+	// Detect Internet Explorer 
+	let IExplorerAgent =  
+		userAgentString.indexOf("MSIE") > -1 ||  
+		userAgentString.indexOf("rv:") > -1; 
+          
+	// Detect Firefox 
+	let firefoxAgent =  
+		userAgentString.indexOf("Firefox") > -1; 
+          
+	// Detect Safari 
+	let safariAgent =  
+		userAgentString.indexOf("Safari") > -1; 
+                  
+	// Discard Safari since it also matches Chrome 
+	if ((chromeAgent) && (safariAgent))  
+		safariAgent = false; 
+          
+	// Detect Opera 
+	let operaAgent =  
+		userAgentString.indexOf("OP") > -1; 
+                  
+	// Discard Chrome since it also matches Opera      
+	if ((chromeAgent) && (operaAgent))  
+		chromeAgent = false; 
+          
+	// document.querySelector(".output-safari").textContent 
+	// 	= safariAgent; 
+	// document.querySelector(".output-chrome").textContent 
+	// 	= chromeAgent; 
+	// document.querySelector(".output-ie").textContent 
+	// 	= IExplorerAgent; 
+	// document.querySelector(".output-opera").textContent 
+	// 	= operaAgent; 
+	// document.querySelector(".output-firefox").textContent 
+	// 	= firefoxAgent; 
 
-if (isEdge = true) {
-	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
-}
+	if (firefoxAgent == true) {
+		alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken.\n\nAre you sure you want to proceed?")
+	}
+
+} 
+
+checkBrowser();
 
 
 
