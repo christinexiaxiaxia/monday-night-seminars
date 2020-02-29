@@ -300,7 +300,8 @@ var isEdgeChromium = isChrome && (navigator.userAgent.indexOf("Edg") != -1);
 // Blink engine detection
 var isBlink = (isChrome || isOpera) && !!window.CSS;
 
-if (isOpera = true || isFirefox = true || isSafari = true || isIE = true || isEdge = true || isEdgeChromium = true) {
+// if (isOpera = true || isFirefox = true || isSafari = true || isIE = true || isEdge = true || isEdgeChromium = true) {
+if (isSafari = true) {
 	alert("Looks like you aren't viewing this website on Chrome! You'll be able to view the page but be warned—it will be a bit broken. Are you sure you want to proceed?")
 }
 
